@@ -39,7 +39,6 @@ if __name__ == '__main__':
     elif(opt.quickselect == '5'):
         opt.input_name = 'Beer'
 
-    print( opt.input_name)
     Gs = []
     Zs = []
     reals = []
@@ -59,6 +58,8 @@ if __name__ == '__main__':
         if (opt.dimensions == 4) :
             size = functions.VideotoImage(opt)
             opt.path = opt.input_dir + "/" + opt.input_name
+            opt.path = opt.path.replace("/","//")
+            print(opt.path)
         real = functions.read_image(opt)
         functions.adjust_scales2image(real, opt) #make 250 max dimension
 
