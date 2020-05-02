@@ -464,6 +464,7 @@ def VideotoImage(opt):
         success,image = vidcap.read()
 #        print('Read a new frame: ', success)
         count += 1
+        print("Input/Videos/%s/frame%d.jpg" % (name,count))
         if(count == 100):
             print("Warning, more the 100 frames")
     opt.frame_count = count

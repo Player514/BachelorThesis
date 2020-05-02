@@ -24,20 +24,22 @@ if __name__ == '__main__':
 
     parser.add_argument('--dimensions', help='number of dimensions', default=4)
 
-    parser.add_argument('--frame_cap', help='limit frames', default=25)
+    parser.add_argument('--frame_cap', help='limit frames', default=100)
 
     opt = parser.parse_args()
     opt = functions.post_config(opt)
-    if(opt.quickselect == 1):
-        input_name = 'Pond'
-    elif(opt.quickselect == 2):
-        input_name = 'Ripples'
-    elif(opt.quickselect == 3):
-        input_name = 'Trees'
-    elif(opt.quickselect == 4):
-        input_name = 'Snowboard'
-    elif(opt.quickselect == 5):
-        input_name = 'Beer'
+    if(opt.quickselect == '1'):
+        opt.input_name = 'Pond'
+    elif(opt.quickselect == '2'):
+        opt.input_name = 'Ripples'
+    elif(opt.quickselect == '3'):
+        opt.input_name = 'Trees'
+    elif(opt.quickselect == '4'):
+        opt.input_name = 'Snowboard'
+    elif(opt.quickselect == '5'):
+        opt.input_name = 'Beer'
+
+    print( opt.input_name)
     Gs = []
     Zs = []
     reals = []
