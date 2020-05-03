@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--dimensions', help='number of dimensions', default=4)
 
-    parser.add_argument('--frame_cap', help='limit frames', default=100)
+    parser.add_argument('--frame_cap', help='limit frames', default=20)
 
     parser.add_argument('--on_server', help='on HPC Cluster', default=1)
 
@@ -59,7 +59,7 @@ if __name__ == '__main__':
         #Andreas convert image also this does nothing since other than check if format correct
         if (opt.dimensions == 4) :
             size = functions.VideotoImage(opt)
-            opt.path = "SNVGAN/" + opt.input_dir + "/" + opt.input_name
+            opt.path = opt.input_dir + "/" + opt.input_name
             print(opt.path)
         real = functions.read_image(opt)
         functions.adjust_scales2image(real, opt) #make 250 max dimension

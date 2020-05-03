@@ -175,9 +175,7 @@ def read_image(opt):
         x = np2torchwithoutmove(img.imread('%s/frame%d.jpg' % (opt.path,0)),opt)
         for i in range(1,opt.frame_count):
             tx = np2torchwithoutmove(img.imread('%s/frame%d.jpg' % (opt.path,i)),opt)
-            print(tx.shape)
             x = np.append(x,tx,axis = 0)
-            print(x.shape)
     else:
         x = img.imread('%s/%s' % (opt.input_dir,opt.input_name))
         x = np2torchwithoutmove(x,opt)

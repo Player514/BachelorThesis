@@ -5,7 +5,7 @@ def get_arguments():
     parser = argparse.ArgumentParser()
     #parser.add_argument('--mode', help='task to be done', default='train')
     #workspace:
-    parser.add_argument('--not_cuda', action='store_true', help='disables cuda', default=0)
+    parser.add_argument('--not_cuda', action='store_true', help='disables cuda', default=1)
     
     #load, input, save configurations:
     parser.add_argument('--netG', default='', help="path to netG (to continue training)")
@@ -26,12 +26,12 @@ def get_arguments():
     #pyramid parameters:
     parser.add_argument('--scale_factor',type=float,help='pyramid scale factor',default=0.75)#pow(0.5,1/6))0.75
     parser.add_argument('--noise_amp',type=float,help='addative noise cont weight',default=0.1)
-    parser.add_argument('--min_size',type=int,help='image minimal size at the coarser scale',default=25) #doesnt limit dimension 3 (yet) #TODO
-    parser.add_argument('--max_size', type=int,help='image maximum size at the finest scale', default=250)
+    parser.add_argument('--min_size',type=int,help='image minimal size at the coarser scale',default=20) #doesnt limit dimension 3 (yet) #TODO
+    parser.add_argument('--max_size', type=int,help='image maximum size at the finest scale', default=200)
 
     #optimization hyper parameters:
     #cgabge niter from 2000 to 200
-    parser.add_argument('--niter', type=int, default=1000, help='number of epochs to train per scale')
+    parser.add_argument('--niter', type=int, default=1500, help='number of epochs to train per scale')
     parser.add_argument('--gamma',type=float,help='scheduler gamma',default=0.1)
     parser.add_argument('--lr_g', type=float, default=0.0005, help='learning rate, default=0.0005')
     parser.add_argument('--lr_d', type=float, default=0.0005, help='learning rate, default=0.0005')
