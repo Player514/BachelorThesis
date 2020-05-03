@@ -9,4 +9,4 @@
 
 module load CUDA
 echo "Running on $(hostname):"
-srun python3 main_train.py --quickselect 1
+srun python3 main_train.py --quickselect 3

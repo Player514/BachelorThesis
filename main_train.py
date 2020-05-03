@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--dimensions', help='number of dimensions', default=4)
 
-    parser.add_argument('--frame_cap', help='limit frames', default=20)
+    parser.add_argument('--frame_cap', help='limit frames', default=15)
 
     parser.add_argument('--on_server', help='on HPC Cluster', default=1)
 
