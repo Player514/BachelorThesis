@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=SNVGAN (singan 3d) w. ripples    # Job name
+#SBATCH --job-name=SNVGAN (singan 3d) w.   # Job name
 #SBATCH --output=../job.%j.out      # Name of output file (%j expands to jobId)
 #SBATCH --cpus-per-task=8       # Schedule one core
 #SBATCH --gres=gpu               # Schedule a GPU
