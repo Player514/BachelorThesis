@@ -40,6 +40,14 @@ if __name__ == '__main__':
         opt.input_name = 'Snowboard'
     elif(opt.quickselect == '5'):
         opt.input_name = 'Beer'
+    elif(opt.quickselect == '6'):
+        opt.input_name = 'centralstation'
+    elif(opt.quickselect == '7'):
+        opt.input_name = 'dockclock'
+    elif(opt.quickselect == '8'):
+        opt.input_name = 'party'
+    elif(opt.quickselect == '9'):
+        opt.input_name = 'skateboard'
 
     Gs = []
     Zs = []

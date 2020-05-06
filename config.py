@@ -27,7 +27,7 @@ def get_arguments():
     parser.add_argument('--scale_factor',type=float,help='pyramid scale factor',default=0.75)#pow(0.5,1/6))0.75
     parser.add_argument('--noise_amp',type=float,help='addative noise cont weight',default=0.1)
     parser.add_argument('--min_size',type=int,help='image minimal size at the coarser scale',default=20) #doesnt limit dimension 3 (yet) #TODO
-    parser.add_argument('--max_size', type=int,help='image maximum size at the finest scale', default=200)
+    parser.add_argument('--max_size', type=int,help='image maximum size at the finest scale', default=200) #honestly doesnt matter much, run til error
 
     #optimization hyper parameters:
     #cgabge niter from 2000 to 200
