@@ -1,0 +1,24 @@
+slurmstepd: error: execve(): module: No such file or directory
+srun: error: desktop9: task 0: Exited with exit code 2
+Running on desktop9:
+/var/spool/slurm/d/job13650/slurm_script: line 12: rem: command not found
+/var/spool/slurm/d/job13650/slurm_script: line 13: rem: command not found
+Traceback (most recent call last):
+  File "main_train.py", line 3, in <module>
+    from SinGAN.manipulate import *
+  File "/home/anok/MachineLearning/SNVGAN/SinGAN/manipulate.py", line 11, in <module>
+    import torchvision.datasets as dset
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/__init__.py", line 2, in <module>
+    from torchvision import datasets
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/datasets/__init__.py", line 9, in <module>
+    from .fakedata import FakeData
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/datasets/fakedata.py", line 3, in <module>
+    from .. import transforms
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/transforms/__init__.py", line 1, in <module>
+    from .transforms import *
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/transforms/transforms.py", line 17, in <module>
+    from . import functional as F
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/transforms/functional.py", line 5, in <module>
+    from PIL import Image, ImageOps, ImageEnhance, PILLOW_VERSION
+ImportError: cannot import name 'PILLOW_VERSION'
+srun: error: desktop9: task 0: Exited with exit code 1

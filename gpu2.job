@@ -1,14 +1,14 @@
 #!/bin/bash
 
-#SBATCH --job-name=SNVGAN (singan 3d) w. centralstation   # Job name
+#SBATCH --job-name=SNVGANwcentralstation   # Job name
 #SBATCH --output=../job.%j.out      # Name of output file (%j expands to jobId)
 #SBATCH --cpus-per-task=8       # Schedule one core
 #SBATCH --gres=gpu               # Schedule a GPU
-#SBATCH --time=48:00:00          # Run time (hh:mm:ss) - run for one hour max
+#SBATCH --time=24:00:00          # Run time (hh:mm:ss) - run for one hour max
 #SBATCH --partition=red,brown        # Run on either the Red or Brown queue
 
 module load CUDA
 echo "Running on $(hostname):"
-srun pip3 install requirements.txt
-srun pip3 install torch==1.2.0+cu92 torchvision==0.4.0+cu92 -f https://download.pytorch.org/whl/torch_stable.html
+rem srun pip3 install requirements.txt
+rem srun pip3 install torch==1.2.0+cu92 torchvision==0.4.0+cu92 -f https://download.pytorch.org/whl/torch_stable.html
 srun python3 main_train.py --quickselect 6

@@ -1,0 +1,35 @@
+Running on desktop9:
+Defaulting to user installation because normal site-packages is not writeable
+ERROR: Could not find a version that satisfies the requirement requirements.txt (from versions: none)
+ERROR: No matching distribution found for requirements.txt
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+srun: error: desktop9: task 0: Exited with exit code 1
+Defaulting to user installation because normal site-packages is not writeable
+Looking in links: https://download.pytorch.org/whl/torch_stable.html
+Requirement already satisfied: torch==1.2.0+cu92 in /home/anok/.local/lib/python3.6/site-packages (1.2.0+cu92)
+Requirement already satisfied: torchvision==0.4.0+cu92 in /home/anok/.local/lib/python3.6/site-packages (0.4.0+cu92)
+Requirement already satisfied: numpy in /usr/local/lib64/python3.6/site-packages (from torch==1.2.0+cu92) (1.18.2)
+Requirement already satisfied: pillow>=4.1.1 in /usr/local/lib64/python3.6/site-packages (from torchvision==0.4.0+cu92) (7.0.0)
+Requirement already satisfied: six in /usr/local/lib/python3.6/site-packages (from torchvision==0.4.0+cu92) (1.14.0)
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+Traceback (most recent call last):
+  File "main_train.py", line 3, in <module>
+    from SinGAN.manipulate import *
+  File "/home/anok/MachineLearning/SNVGAN/SinGAN/manipulate.py", line 11, in <module>
+    import torchvision.datasets as dset
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/__init__.py", line 2, in <module>
+    from torchvision import datasets
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/datasets/__init__.py", line 9, in <module>
+    from .fakedata import FakeData
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/datasets/fakedata.py", line 3, in <module>
+    from .. import transforms
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/transforms/__init__.py", line 1, in <module>
+    from .transforms import *
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/transforms/transforms.py", line 17, in <module>
+    from . import functional as F
+  File "/home/anok/.local/lib/python3.6/site-packages/torchvision/transforms/functional.py", line 5, in <module>
+    from PIL import Image, ImageOps, ImageEnhance, PILLOW_VERSION
+ImportError: cannot import name 'PILLOW_VERSION'
+srun: error: desktop9: task 0: Exited with exit code 1
