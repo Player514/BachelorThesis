@@ -6,16 +6,16 @@
 ## SnvGAN Model
 Basic Image Showing how model works:
 
- ![](imgs/SNVGANjpeg.PNG)
+ ![](imgs/SNVGANjpeg.jpeg)
 
 ## SnvGAN Results
  
- ![](imgs/SnvGANResults.PNG)
+ ![](imgs/SnvGANResults.jpeg)
 
 
 ## Time Resultion Adjustable results (Basically SvnGAN (For coarse scales) + SinGAN (For fine scales))
  
- ![](imgs/TraGANCandDFull.PNG)
+ ![](imgs/TraGANCandDFull.jpeg)
 
 
 ## Based off of SinGAN
