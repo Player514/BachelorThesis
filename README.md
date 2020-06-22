@@ -13,7 +13,7 @@ Basic Image Showing how model works:
  ![](imgs/SnvGANResults.png)
 
 
-## Time Resultion Adjustable results (Basically SvnGAN (For coarse scales) + SinGAN (For fine scales))
+## Time Resultion Adjustable Generative Adversarial Network results (Basically SvnGAN (For coarse scales) + SinGAN (For fine scales))
  
  ![](imgs/TraGANCandDFull.png)
 
@@ -24,5 +24,5 @@ Paper can be found here [paper](https://arxiv.org/pdf/1905.01164.pdf)
 ## How to Run
 (TODO)
 
-Important! Does not run on modern versions of Torch. Recommended Torch version = 1.2.0 
+Important! Does not run on modern versions of Torch. Recommended Torch version = 1.2.0. <br />
 Running on Cluster Code included (task files)
